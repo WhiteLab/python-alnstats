@@ -28,9 +28,9 @@ class CoverageProcessor(fileprocessor.FileProcessor):
       data['target']  = tot
       data['aln_ot'] += cov * cnt
 
-      if cov > 0: data['cov1bp'] += cnt
-      if cov > 2: data['cov2bp'] += cnt
-      if cov > 8: data['cov8bp'] += cnt
+      if cov >= 1: data['cov1bp'] += cnt
+      if cov >= 2: data['cov2bp'] += cnt
+      if cov >= 8: data['cov8bp'] += cnt
 
     # Return processed data.
     return data
