@@ -8,4 +8,4 @@ class SeqOTEnrDataProcessor(dataprocessor.DataProcessor):
 
   @classmethod
   def process(cls,data,**kwargs):
-    data['seq_ot_enr'] = float(data['aln_ot']) / float(data['len'] * data['reads'])
+    data['seq_ot_enr'] = float(data['len'] * data['reads']) / float(data['aln_ot'])

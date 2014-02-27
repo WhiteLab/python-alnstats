@@ -8,4 +8,4 @@ class AlnOTEnrDataProcessor(dataprocessor.DataProcessor):
 
   @classmethod
   def process(cls,data,**kwargs):
-    data['aln_ot_enr'] = float(data['aln_ot']) / float(data['len'] * data['align'])
+    data['aln_ot_enr'] = float(data['len'] * data['align']) / float(data['aln_ot'])
