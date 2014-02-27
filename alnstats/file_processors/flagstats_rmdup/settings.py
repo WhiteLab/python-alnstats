@@ -10,5 +10,6 @@ import re
 regex = r'^.*/[^\.]+{extension}$'
 extensions = [
   '.rmdup.srt.bam.flagstats',
+  '.sp.rmdup.srt.bam.flagstats',
 ]
 extensions = map(lambda x: re.compile(regex.format(extension=x)), extensions)

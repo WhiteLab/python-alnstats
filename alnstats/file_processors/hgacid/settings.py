@@ -6,6 +6,7 @@ data = {
   'run'  : 'N/A', # Run Number
   'bar'  : 'N/A', # Barcode ID
   'lane' : 'N/A', # Lane Number
+  'pair' : False, # Paired
 }
 
 # Regex fields.
@@ -16,6 +17,7 @@ re_fields = [
   r'(?P<run>\d{4})',     # Run
   r'(?P<bar>[^_]+)',     # Barcode
   r'(?P<lane>\d)',       # Lane
+  r'?(?P<pair>\d)?',      # Pair
 ]
 
 # Regex field separator.
@@ -33,4 +35,5 @@ mappings = {
   'run'  : str,
   'bar'  : str,
   'lane' : str,
+  'pair' : bool,
 }

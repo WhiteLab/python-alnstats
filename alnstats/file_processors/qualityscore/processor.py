@@ -3,16 +3,13 @@ import settings
 
 from alnstats.util.plugin import fileprocessor
 
-class QalityScoreProcessor(fileprocessor.FileProcessor):
+class QualityScoreProcessor(fileprocessor.FileProcessor):
   '''
   Quality score file processor.
   '''
   name = 'QualityScoreProcessor'
 
   def process(self,fname,**kwargs):
-    '''
-    Coverage file parser.
-    '''
     # Initialize data dict using settings default.
     data = dict(settings.data)
 

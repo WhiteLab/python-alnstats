@@ -11,7 +11,7 @@ class HGACIDProcessor(fileprocessor.FileProcessor):
 
   def process(self,fname,**kwargs):
     '''
-    Machine filename parser.
+    HGAC filename parser.
     '''
     # Initialize data dict using settings default.
     data = dict(settings.data)
@@ -24,6 +24,7 @@ class HGACIDProcessor(fileprocessor.FileProcessor):
       run  = line['run']
       bar  = line['bar']
       lane = line['lane']
+      pair = line['pair']
 
       # Update data based on parsed values.
       data['bid']  = bid
@@ -32,6 +33,7 @@ class HGACIDProcessor(fileprocessor.FileProcessor):
       data['run']  = run
       data['bar']  = bar
       data['lane'] = lane
+      data['pair'] = pair
 
     # Return processed data.
     return data

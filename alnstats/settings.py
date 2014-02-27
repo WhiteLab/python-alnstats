@@ -9,6 +9,7 @@ from file_processors import flagstats_rmdup
 
 # Available data processors
 # Note: Import order is execution order.
+from data_processors import peqs
 from data_processors import fraccov1bp
 from data_processors import fraccov2bp
 from data_processors import fraccov8bp
