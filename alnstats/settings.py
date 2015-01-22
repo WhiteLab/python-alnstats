@@ -14,7 +14,6 @@ from data_processors import fraccov1bp
 from data_processors import fraccov2bp
 from data_processors import fraccov8bp
 from data_processors import avg_ot_cov
-from data_processors import fracmerge
 from data_processors import fracalign
 from data_processors import fracrmdup
 from data_processors import aln_fra_ot
@@ -32,12 +31,10 @@ fields = [
   'lane',       # Lane
   'len',        # Read Length
   'reads',      # Total Reads
-  'merge',      # Post-merged and Clipped Reads
-  'fracmerge',  # Fraction of Total Reads Post-Merge
   'align',      # Aligned Reads
   'fracalign',  # Fraction of Total Reads Post-Align Post-Merge
   'rmdup',      # Post-Duplicate Removed Reads
-  'fracrmdup',  # Fraction of Total Reads post-Rmdup Post-Align Post-Merge
+  'fracrmdup',  # Fraction of Total Reads post-align post-rmdup
   'target',     # Number of Target Base Pairs
   'aln_ot',     # On-Target Aligned Base Pairs
   'aln_fra_ot', # Fraction of Aligned Base Pairs On-Target
