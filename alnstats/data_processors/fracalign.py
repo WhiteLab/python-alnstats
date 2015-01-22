@@ -8,4 +8,4 @@ class FracAlignDataProcessor(dataprocessor.DataProcessor):
 
   @classmethod
   def process(cls,data,**kwargs):
-    data['fracalign'] = float(data['align']) / float(data['merge'])
+    data['fracalign'] = float(data['align']) / float(data['reads'])

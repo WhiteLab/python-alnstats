@@ -23,7 +23,6 @@ class AlignFlagstatsProcessor(fileprocessor.FileProcessor):
 
     # Parse each line as a flagstats line.
     for i,line in enumerate(parser.parse(fname)):
-      data['merge'] = line['total'][0]
       data['align'] = line['mapped'][0]
 
     # Return processed data.

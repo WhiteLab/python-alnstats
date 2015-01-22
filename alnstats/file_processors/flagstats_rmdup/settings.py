@@ -1,7 +1,6 @@
 # Data fields and initial values.
 data = {
-  'merge' : 0, # Number of reads post-merge
-  'align' : 0, # Number of reads post-align post-merge
+  'align' : 0, # Number of reads post-align
 }
 
 # Recognized file extensions.
