@@ -26,7 +26,7 @@ def main(args):
   # Generate groups.
   groups = dict()
   try: map(lambda x: groups.update({group(x):list()}), args.files)
-  except AttributeError: raise ValueError('upgroupable files found')
+  except AttributeError: raise ValueError('ungroupable files found')
 
   # Populate groups.
   map(lambda x: groups[group(x)].append(x), args.files)
