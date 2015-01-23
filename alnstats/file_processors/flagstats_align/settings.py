@@ -9,6 +9,5 @@ import re
 regex = r'^.*/[^\.]+{extension}$'
 extensions = [
   '.srt.bam.flagstats',
-  '.sp.srt.bam.flagstats',
 ]
 extensions = map(lambda x: re.compile(regex.format(extension=x)), extensions)
